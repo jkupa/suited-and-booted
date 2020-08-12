@@ -1,14 +1,39 @@
 # suited-and-booted
 CS3
 
-Accomplishments:
-My experience as a BlackRock intern has allowed me to branch out into not only businesses outside of Alternatives, but also outside of the BlackRock technology sector as a whole! Prior to coming to BlackRock I would have never imagined that I would have conversations and make connections with Equity Traders, Portfolio Managers, Credit Research Specialists and even Strategic Partners! I had originally valued my SWE internship opportunity at BlackRock as I felt it would allow me to pair my technical expertise with my genuine interest in business. Conversations with the aforementioned individuals from different job functions within BlackRock definitely groomed my interest in business and finance, but more importantly, these individuals gave me advice and actionable steps to hone my financial knowledge and understanding of the markets. The guidance and knowledge empowered me to enter the Design 2 Deliver Intern Pitch Competition. While I was not selected as one of the top three pitches, I did gain an in depth understanding of the alternative investment branch as well as invaluable experience with public speaking/pitching. I am certain that the extra curricular information learned through this internship will serve me well in my personal life (personal finance, networking, public speaking) in addition to my career aspirations (finance, technology, problem-solving)!
+As you can see from our agenda, we will begin by introducing you to our team, followed by an explanation our teams business problem. Next we will discuss our approach to the solution followed by a brief walkthrough of our project. We will then close with  our project  demo followed by  a brief Q&A
 
-In the APG Alternatives team our summer project focused mainly on the creation of a GraphQL API/gRPC Server to expose data from QuasarDB to eFront. Initially, from the description of the task it did not seem too involved and very straightforward so when we began coding, it was at first alarming how much I did not know. There were at least seven technologies (GraphQL, gRPC, Maven, Spring, JPA, Rejoiner, Docker, etc.) that I had not been previously exposed to. Due to the enterprise nature of the technology we used this summer, we a re not given the opportunity to utilize this technology in our formal education. I am thankful to be a part of a supportive team with a great "employee buddy" and manger who would reassure me that the information I was learning was challenging, but attainable, which is all I needed to hear. I applied myself to the proper Pluralsight tutorials as well as BlackRock Academy workshops to familiarize with the tools and environments in my work. Even with my persistent application I would still face blockers in my development of the code. To counteract these blockers I would troubleshoot the issues myself (analyzing the error statements in the terminal/backtracking the code) or consult with my colleagues so that the next time I face a similar error I was able to navigate the issue more smoothly, which ultimately enhanced my problem solving capabilities. While I did accomplish the goal of creating a working application that exposed the necessary data, I feel that the lessons learned through trial and error, the exposure to enterprise software, and honing of my problem solving skills were the true accomplishment of my software developer experience at BalckRock.
+Justin Kupa, Franklin & Marshall College (Lancaster, PA)
+Flexible API Model w/ GraphQL over gRPC
+Fav Moment: Bonding with the team
+	Talking to Ragesh during his  FTO
+	Communication w fellow interns and forming solace over our struggles
+	And of course who could forget the game nights :/
+
+Business Problem:
+In 2019 BlackRock made the major acquisition of eFront providing Aladdin the opportunity to advance and expand their breadth in Alternatives industry. As a result of this accomplishment, we were tasked with the integration of the new eFront technology into the existing Aladdin ecosystem. Through this process our end-goal was to build a flexible API that enables data mobility and synchronization between QuasarDB, which holds preexisting BlackRock Alternative Investment information, and the newly acquired eFront technology.
+
+In order to transform our goal into a reality…:
+We utilized the powerful and efficient GraphQL technology to query data from the QuasarDB
+We then exposed the retrieved data over HTTP (REST) and gRPC Server endpoints for client access
 
 
-RFI:
-While my team did create a fully functional application with the necessary design requirements, and I was able to debug errors that came about while coding, I do feel I could improve my overall understanding of the technology we utilized in our project. As previously mentioned, our project drew upon a vast amount of technologies, and each of these technologies have their own set of intricacies that add to their value. Many of these technologies also do a great job of abstracting away the "noise" of coding, with the intent to simplify the development process. As a result many instances my code would work and I would understand the process of getting the application configured, however I did not always understand the concept of why different parts of the application would work. I am aware that it is wishful thinking to expect college interns to become experts at various technologies in the 3-4 weeks we worked on our project but looking beyond this internship, I will pursue a further understanding of the industry leading technology we used for our project as it will benefit my future career and my understanding these innovative technologies.
 
-Our application ran through the minor stress tests we implemented through querying information via Postman and BloomRPC however it is best practice to perform unit tests on software to assure the quality of the code. Due to time constraints and the intricacy of our application, we were unable to configure unit tests for our application to ensure the quality. While the absence of unit testing is not crucial to our application as it was not being deployed for production, I am aware that unit testing is a vital skill for any Full-Time software developer and feel I can improve my unit testing skills. Even though we did not utilize unit testing for our summer project, I am glad that our Manager, Alan Martinez, explained to us current BlackRock technologies often used for unit testing such as JUnit and Mockito so I can learn about them going forward so I can ultimately gain valuable experience and familiarity with the practice of unit testing.
+Technology Used:
+Java
+•	We all know Java, you either love or hate it and we chose to love this  programming language for our project
+GraphQL
+gRPC
+Maven 
+•	plugin execution framework / build automation tool used to mange projects
+Aspects of the Spring Framework  
+•	Spring Boot to launch application
+•	Spring Data JPA, utilizing its built in query methods through annotations 
+Google Rejoiner Project 
+•	Acts as the intermediary between GraphQL and gRPC
+•	supports creation of GraphQL server on top of gRPC microservices
+•	generates GraphQL types from Proto definitions, populates request Proto based on GraphQL query  parameters (protos generated via BlackRock plugin)
+Docker
+•	lightweight and deploys applications
+•	Unfortunately we weren’t able to get the proper security clearances to implement docker for our presentation, nonetheless we’ll still have a great demo for you all at the end of our slideshow! :)
 
